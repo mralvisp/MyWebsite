@@ -325,4 +325,11 @@ background-color: red;
    
 }
 
-
+@media(max-width: 768px){ 
+    body {
+       
+      background-image: none;
+    
+    }
+   
+}
