@@ -132,8 +132,12 @@ width: 50%;
 }
 
 #about .col-2 img {
-width: 100%;
+max-width: 100%;
 }
+
+#about .col-2 div{
+    text-align: center;
+    }
 
 #methodology {
 display: flex;
@@ -186,6 +190,7 @@ width: 50%;
 
 #contacts .col-2 iframe {
 width: 100%;
+display: block;
 }
 
 #reserved {
