@@ -1,0 +1,329 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+p h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+  
+    max-width: 1200px;
+    margin: auto;
+    background-image: url('ny.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.nav-bar {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin: 0px;
+background: rgb(10, 10, 10);
+height: 2cm;
+align-items: center;
+font-size: 18px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
+}
+
+.nav{
+    align-items: center;
+    padding-top:50%;
+    padding-bottom: 50%;
+
+}
+
+.nav-bar .nav a{
+    color: white;
+    padding-left: 0.3cm;
+    padding-right: 0.3cm;
+    text-decoration:none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+#description { 
+display: flex;
+flex-direction: row;
+align-items: center;
+background: lightgoldenrodyellow;
+padding: 0.5cm;
+line-height: 1cm
+
+}
+
+#description .rowone{
+    width: 50%;
+    
+    
+    
+}
+
+#description .rowone img{
+  max-width: 100%;
+    
+}
+
+#description .rowtwo{
+    width: 50%;
+    text-align: center;
+    font-size: 22px;
+    padding: 0.5cm;
+  
+}
+
+#description .rowtwo div{
+   text-align: center;
+
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 2cm;
+    padding: 0.3cm;
+    text-align: center;
+    width: 300px;
+}
+
+#alvis {
+    border: 3px solid white;
+    padding: 0.2cm;
+    border-radius: 1cm;
+}
+
+#about {
+     display: flex;
+     flex-direction: row;
+     background: lightgoldenrodyellow;
+     padding-top: 2cm;
+     padding-bottom: 2cm;
+     padding-left: 0.7cm;
+     padding-right: 0.7cm;
+     max-height: fit-content;
+     line-height: 1cm
+     
+     
+     
+    
+
+}
+
+#about .col-1{
+width: 50%;
+font-size: 22px;
+text-align: justify;
+padding-right:1cm;
+}
+
+#about .col-2{
+width: 50%;
+}
+
+#about .col-2 img {
+width: 100%;
+height:max-content;
+}
+
+#methodology {
+display: flex;
+flex-direction: row;
+
+padding-left: 0.7cm;
+padding-right: 0.7cm;
+padding-top: 2cm;
+padding-bottom: 2cm;
+max-height: fit-content;
+line-height: 1cm;
+text-align: justify;
+background: lightgoldenrodyellow;
+
+}
+
+#methodology .col-1 {
+width: 50%;
+font-size: 22px;
+padding-right:1cm;
+
+}
+
+#methodology .col-2 {
+width: 50%;
+font-size: 22px;
+
+}
+
+#contacts{
+display: flex;
+flex-direction: row;
+padding-left: 0.7cm;
+padding-right: 0.7cm;
+padding-top: 2cm;
+padding-bottom: 2cm;
+background: lightgoldenrodyellow;
+line-height: 1cm
+}
+
+#contacts .col-1 {
+width:50%;
+font-size: 22px;
+padding-right:1cm;
+}
+
+#contacts .col-2 {
+width: 50%;
+}
+
+#contacts .col-2 iframe {
+max-width: 100%;
+}
+
+#reserved {
+display: flex;
+background-color: black;
+color:white;
+height: 60px;
+justify-content: center;
+align-items: center;
+}
+
+#reserved div{
+text-align: center;
+}
+
+
+.image{
+display: flex;
+}
+
+.image div {
+padding-right: 0px;
+padding-left: 12px;
+
+}
+
+.background:hover {
+background-color: lightblue;
+}
+
+.background-1:hover {
+background-color: lightgreen;
+}
+
+ .nav a:hover  {
+background-color: red;
+}
+
+#btnScrollToTop {
+    position: fixed;
+    right: 80px;
+    bottom: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+@media(max-width: 768px){ 
+    #description{
+       flex-direction: column;
+    }
+   
+    #description .rowone{ 
+       width: 100%;
+    }
+    #description .rowtwo{
+       width: 100%;
+    }
+}
+
+
+
+@media(max-width: 768px){ 
+    #about{
+       flex-direction: column;
+    }
+   
+    #about .col-1{ 
+       width: 100%;
+    }
+    #about .col-2{
+       width: 100%;
+    }
+}
+
+
+@media(max-width: 768px){ 
+    #methodology{
+       flex-direction: column;
+    }
+   
+    #methodology  .col-1{ 
+       width: 100%;
+    }
+    #methodology .col-2{
+       width: 100%;
+    }
+}
+
+
+
+@media(max-width: 768px){ 
+    #contacts{
+       flex-direction: column;
+    }
+   
+    #contacts  .col-1{ 
+       width: 100%;
+    }
+    #contacts .col-2{
+       width: 100%;
+    }
+}
+
+
+
+
+@media(max-width: 768px){ 
+    .nav-bar .nav a{
+    
+       display: inline-block
+    
+    }
+   
+}
+
+
+@media(max-width: 768px){ 
+    .nav-bar p{
+       
+       display: none;
+    
+    }
+   
+}
+
+@media(max-width: 768px){ 
+    .nav-bar {
+       
+       justify-content: center;
+       padding: 30px 0 ;
+    
+    }
+   
+}
+
+
