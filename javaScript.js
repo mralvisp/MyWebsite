@@ -27,7 +27,7 @@ toggleButton.addEventListener('click', () => {
 
 
 $(document).ready(function () {
-  $('.youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+  $('.video2, .popup-vimeo, .popup-gmaps').magnificPopup({
     disableOn: 700,
     type: 'iframe',
     mainClass: 'mfp-fade',
