@@ -67,4 +67,3 @@ window.onmousewheel = document.onmousewheel = wheel;
 
 
 
-

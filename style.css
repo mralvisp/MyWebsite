@@ -30,8 +30,8 @@ body {
     align-items: center;
     background-color: black;
     color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 
 }
 
@@ -66,15 +66,14 @@ body {
     display: block;
     text-decoration: none;
     color: white;
-    padding: 1rem;
-    font-size: 18px;
-    font-weight: bold;
+    padding: 10px;
+    font-size: 24px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.navbar-links li:hover {
+/*.navbar-links li:hover {
     background-color: #555;
-}
+}*/
 
 .toggle-button {
     position: absolute;
@@ -548,7 +547,7 @@ position: absolute;
 left: 100px;
 padding: 8px 15px;
 transition: all .5s;
-border-radius: 5px;
+border-radius: 100px;
 opacity: 0;
 transition: all .5s;
 }
@@ -565,11 +564,6 @@ content:'' ;
 position: absolute;
 top: 15px;
 left: -20px;
-border-left: 10px solid transparent;
-border-right: 10px solid;
-border-bottom: 10px solid transparent;
-border-top: 10px solid transparent;
-
 }
 
 .facebook *{
@@ -691,7 +685,7 @@ html {
 height: 100%;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 
 
     .grid-container {
@@ -704,6 +698,12 @@ height: 100%;
       ; 
     }
   }
+
+
+
+
+
+  
   
   @media(max-width:600px) {
     .grid-container>* {
@@ -746,12 +746,50 @@ height: 100%;
 
 
 
+ul:hover li a{
+    transform:scale(1);
+    opacity:0.2;
+    filter:blur(5px);
+  }
+  
+  ul li a:hover{
+    transform:scale(1);
+    opacity:1;
+    filter:blur(0);
+    text-decoration:none;
+    color:rgb(18, 17, 17);
+  }
+  
+  ul li a:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#f1efef;
+    transition:0.5s;
+    transform-origin:right;
+    transform:scaleX(0);
+    z-index:-1;
+  }
+  
+  ul li a:hover:before{
+    transition:transform 0.2s;
+    transform-origin:left;
+    transform:scaleX(1);
+  }
 
 
 
 
+button {
+    background: black;
+}
 
-
+#redbutton{
+    background: #dd4b3d;
+}
 
 
 
