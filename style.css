@@ -598,6 +598,12 @@ border-top: 10px solid transparent;
     border-right-color: #dd4b3d;
 }
 
+@media(max-width:400px){
+    .socialbar{
+        display: none;
+    }
+}
+
 
 .grid-container {
 
