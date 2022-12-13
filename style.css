@@ -686,7 +686,7 @@ height: 100%;
 }
 
 @media (min-width: 700px) {
-
+    
 
     .grid-container {
   
@@ -697,6 +697,7 @@ height: 100%;
       1fr        1fr      1fr
       ; 
     }
+
   }
 
 
@@ -712,7 +713,7 @@ height: 100%;
         border: none;
         background-color:;
         gap: 10px;
-        box-shadow: 5px 5px lightblue;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         
 
     }
