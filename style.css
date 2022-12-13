@@ -705,9 +705,15 @@ height: 100%;
 
   
   
-  @media(max-width:600px) {
+  @media(max-width:700px) {
     .grid-container>* {
-        border-radius: 0px
+        border-radius: 0px;
+        margin: 0 30px;
+        border: none;
+        background-color:;
+        gap: 10px;
+        box-shadow: 5px 5px lightblue;
+        
 
     }
   }
