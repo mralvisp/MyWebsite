@@ -326,16 +326,20 @@ padding-bottom: 2cm;
 background: lightgoldenrodyellow;
 line-height: 1cm;
 margin-top: 0px;
+
 }
 
 #contacts .col-1 {
 width:50%;
 font-size: 22px;
 padding-right:1cm;
+
+
 }
 
 #contacts .col-2 {
 width: 50%;
+
 }
 
 #contacts .col-2 iframe {
@@ -806,9 +810,26 @@ html, body {
     overflow-x: hidden;
 }
 
+#nice {
+    display: flex;
+    background-color: black;
+    color:white;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    #nice div{
+    text-align: center;
+    }
 
 
-
+@media (min-width:300px){
+#nice {
+    margin-top: 1cm;
+}
+}
+    
 
 
 
