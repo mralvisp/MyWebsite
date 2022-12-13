@@ -626,10 +626,7 @@ border-top: 10px solid transparent;
 
 .article1 {
     grid-area: article1;
-    padding: 10px;
-    font-size: 18px;
-    overflow: hidden;
-    border-radius: 25px;
+
 
 }
 
@@ -637,68 +634,44 @@ border-top: 10px solid transparent;
     grid-area: article2;
    
  
-    padding: 10px;
-    font-size: 18px;
-    overflow: hidden;
-    border-radius: 25px;
+ 
 
 }
 
 .article3 {
     grid-area: article3;
-    padding: 10px;
-    font-size: 18px;
-    overflow: hidden;
-    border-radius: 25px;
+
 }
 
 .article4 {
     grid-area: article4;
-    padding: 10px;
-    font-size: 18px;
-    overflow: hidden;
-    border-radius: 25px;
+  
 }
 
 .article5 {
     grid-area: article5;
-    padding: 10px;
-    font-size: 18px;
-    overflow: hidden;
-    border-radius: 25px;
+   
 }
 
 .article6 {
     grid-area: article6;
-    padding: 10px;
-    font-size: 18px;
-    overflow: hidden;
-    border-radius: 25px;
+
 }
 
 .article7 {
     grid-area: article7;
-    padding: 10px;
-    font-size: 18px;
-    overflow: hidden;
-    border-radius: 25px;
+
 }
 
 .article8 {
     grid-area: article8;
-    padding: 10px;
-    font-size: 18px;
-    overflow: hidden;
-    border-radius: 25px;
+
 }
 
 
 .article9 {
     grid-area: article9;
-    padding: 10px;
-    font-size: 18px;
-    overflow: hidden;
-    border-radius: 25px;
+
 }
 
 
@@ -708,6 +681,10 @@ border-top: 10px solid transparent;
 .grid-container>* {
     background-color: lightgoldenrodyellow;
     border: 2px solid black;
+    padding: 10px;
+    font-size: 18px;
+    overflow: hidden;
+    border-radius: 25px;
 }
 
 html {
@@ -728,6 +705,12 @@ height: 100%;
     }
   }
   
+  @media(max-width:400px) {
+    .grid-container>* {
+        border-radius: 0px
+
+    }
+  }
 
   .text{
   padding-bottom: 10px;
