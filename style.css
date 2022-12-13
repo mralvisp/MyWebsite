@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Playball&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Sriracha&display=swap');
 
 *{
     margin: 0px;
@@ -39,8 +39,10 @@ body {
     font-size: 1.5rem;
     margin: rem;
     font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border: 1px solid white;
+    
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Sriracha', cursive;
+    border: 1px ;
     padding: 5px;
     margin-left: 30px;
     border-radius: 20px;
@@ -511,6 +513,7 @@ background-color: red;
        
      
      display: inline;
+     
     
     }
    
@@ -799,7 +802,9 @@ button {
 }
 
 
-
+html, body {
+    overflow-x: hidden;
+}
 
 
 
