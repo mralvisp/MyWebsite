@@ -1,52 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Playball&display=swap');
+
+
 *{
     margin: 0px;
     padding: 0px;
 }
 
+
+
+
 p h1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Inconsolata';
 }
 
 body {
-  
+    min-height: 100%;
     max-width: 1200px;
     margin: auto;
     background-image: url('ny.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.nav-bar {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-margin: 0px;
-background: rgb(10, 10, 10);
-height: 2cm;
-align-items: center;
-font-size: 18px;
+
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: rem;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    padding-left: 0.5cm;
-    padding-right: 0.5cm;
+    border: 1px solid white;
+    padding: 5px;
+    margin-left: 30px;
+    border-radius: 20px;
 }
 
-.nav{
-    align-items: center;
-    padding-top:50%;
-    padding-bottom: 50%;
-
+.navbar-links {
+    height: 100%;
+    margin-right: 1cm;
 }
 
-.nav-bar .nav a{
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
     color: white;
-    padding-left: 0.3cm;
-    padding-right: 0.3cm;
-    text-decoration:none;
+    padding: 1rem;
     font-size: 18px;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.toggle-button .bar {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
 
 
 
@@ -69,8 +153,7 @@ line-height: 1cm
 }
 
 #description .rowone img{
-  max-width: 100%;
-    
+  max-width: 100%;  
 }
 
 #description .rowtwo{
@@ -90,7 +173,7 @@ button {
     background-color: black;
     color: white;
     font-size: 16px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
     border-radius: 2cm;
     padding: 0.3cm;
     text-align: center;
@@ -113,11 +196,6 @@ button {
      padding-right: 0.7cm;
      max-height: fit-content;
      line-height: 1cm
-     
-     
-     
-    
-
 }
 
 #about .col-1{
@@ -168,6 +246,76 @@ font-size: 22px;
 
 }
 
+
+
+
+
+/*FEEDBACK*/
+
+#feedback {
+    display: flex;
+    flex-direction: row;
+    background: lightgoldenrodyellow;
+    padding-top: 2cm;
+    padding-bottom: 2cm;
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
+    max-height: fit-content;
+    line-height: 1cm
+}
+
+#feedback .col-1{
+flex:1;
+padding-right:1cm;
+
+}
+
+
+#feedback .col-2{
+flex:1;
+font-size: 22px;
+
+
+
+}
+
+#feedback .col-1 img {
+width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #contacts{
 display: flex;
 flex-direction: row;
@@ -176,7 +324,8 @@ padding-right: 0.7cm;
 padding-top: 2cm;
 padding-bottom: 2cm;
 background: lightgoldenrodyellow;
-line-height: 1cm
+line-height: 1cm;
+margin-top: 0px;
 }
 
 #contacts .col-1 {
@@ -218,11 +367,11 @@ padding-left: 12px;
 
 }
 
-.background:hover {
+.buble:hover {
 background-color: lightblue;
 }
 
-.background-1:hover {
+.whatsapp:hover {
 background-color: lightgreen;
 }
 
@@ -285,6 +434,25 @@ background-color: red;
 }
 
 
+@media(max-width: 768px){ 
+    #feedback{
+       flex-direction: column;
+    }
+   
+    #feedback .col-1{ 
+       width: 100%;
+       padding-bottom: 1cm;
+    }
+    #feedback .col-2{
+       width: 100%;
+       text-align: center;
+    
+       
+    }
+
+
+    
+}
 
 @media(max-width: 768px){ 
     #contacts{
@@ -339,3 +507,284 @@ background-color: red;
     }
    
 }
+
+@media(max-width: 768px){ 
+    .brand-title {
+       
+      visibility: hidden;
+    
+    }
+   
+}
+
+
+
+/*Social media wegdets */
+
+.socialbar {
+    position:fixed;
+    left: 0px;
+    bottom: 300px;
+    
+}
+
+.socialbar a {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    transition: background .5s ease;
+}
+
+.socialbar ion-icon {
+    font-size: 26px;
+    padding: 10px;
+
+}
+
+.socialbar span {
+position: absolute;
+left: 100px;
+padding: 8px 15px;
+transition: all .5s;
+border-radius: 5px;
+opacity: 0;
+transition: all .5s;
+}
+
+.socialbar a:hover span {
+  opacity: 1;  
+  left: 65px;
+
+}
+
+
+.socialbar span:after {
+content:'' ;
+position: absolute;
+top: 15px;
+left: -20px;
+border-left: 10px solid transparent;
+border-right: 10px solid;
+border-bottom: 10px solid transparent;
+border-top: 10px solid transparent;
+
+}
+
+.facebook *{
+    background: #3b5998;
+    border-top-right-radius:5px;
+}
+
+.twitter *{
+    background: #00acee;
+}
+
+.youtube *{
+    background: #dd4b3d ;
+    border-top-right-radius: 5px;
+}
+
+.socialbar .facebook span:after {
+    border-right-color: #3b5998;
+}
+
+.socialbar .twitter span:after {
+    border-right-color: #00acee;
+}
+
+.socialbar .youtube span:after {
+    border-right-color: #dd4b3d;
+}
+
+
+.grid-container {
+
+    padding-top: 20px;
+    display: grid;
+    gap: 15px;
+    grid-template-areas:
+    "article1"
+    "article2"
+    "article3"
+    "article4"
+    "article5"
+    "article6"
+    "article7"
+    "article8"
+    "article9"
+    ;
+}
+
+
+.article1 {
+    grid-area: article1;
+    padding: 10px;
+    font-size: 18px;
+    overflow: hidden;
+    border-radius: 25px;
+
+}
+
+.article2 {
+    grid-area: article2;
+   
+ 
+    padding: 10px;
+    font-size: 18px;
+    overflow: hidden;
+    border-radius: 25px;
+
+}
+
+.article3 {
+    grid-area: article3;
+    padding: 10px;
+    font-size: 18px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.article4 {
+    grid-area: article4;
+    padding: 10px;
+    font-size: 18px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.article5 {
+    grid-area: article5;
+    padding: 10px;
+    font-size: 18px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.article6 {
+    grid-area: article6;
+    padding: 10px;
+    font-size: 18px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.article7 {
+    grid-area: article7;
+    padding: 10px;
+    font-size: 18px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.article8 {
+    grid-area: article8;
+    padding: 10px;
+    font-size: 18px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+
+.article9 {
+    grid-area: article9;
+    padding: 10px;
+    font-size: 18px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+
+
+
+
+.grid-container>* {
+    background-color: lightgoldenrodyellow;
+    border: 2px solid black;
+}
+
+html {
+height: 100%;
+}
+
+@media (min-width: 800px) {
+
+
+    .grid-container {
+  
+      grid-template:
+      "article1 article2 article3 " 400px
+      "article4 article5 article6"  400px
+      "article7 article8 article9"  400px/
+      1fr        1fr      1fr
+      ; 
+    }
+  }
+  
+
+  .text{
+  padding-bottom: 10px;
+  margin-top: 1cm;
+  height: 200px;
+  }
+
+  .picture {
+    height: 200px; 
+    width: 100%;
+  }
+
+  img {
+    object-fit: cover;
+     width: 100%;
+     height: 100%
+  }
+
+  
+#welcomeLogo {
+    font-family: 'Playball' ;
+}
+
+.article1:hover {transform: scale(0.9);}
+.article2:hover {transform: scale(0.9);}
+.article3:hover {transform: scale(0.9);}
+.article4:hover {transform: scale(0.9);}
+.article5:hover {transform: scale(0.9);}
+.article6:hover {transform: scale(0.9);}
+.article7:hover {transform: scale(0.9);}
+.article8:hover {transform: scale(0.9);}
+.article9:hover {transform: scale(0.9);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
