@@ -11,11 +11,11 @@ btnScrollToTop.addEventListener('click', function () {
 
 
 
-/*$("img").toggle(100);
-$("img").toggle(3000);
-$("p").slideUp(100);
-$("p,h1").slideDown(1500);
-$("body").fadeIn(3000);*/
+$(".jquery").toggle(100);
+$(".jquery").toggle(2000);
+$(".blockanimation").slideUp(100);
+$(".blockanimation").slideDown(1500);
+$("body").fadeIn(3000);
 
 
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
