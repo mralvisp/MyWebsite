@@ -43,15 +43,6 @@ $(document).ready(function () {
 // Mause Wheel Scroll 
 
 
-function wheel(event) {
-  var delta = 0;
-  if (event.wheelDelta) { (delta = event.wheelDelta / 120); }
-  else if (event.detail) { (delta = -event.detail / 3); }
-
-  handle(delta);
-  if (event.preventDefault) { (event.preventDefault()); }
-  event.returnValue = false;
-}
 
 function handle(delta) {
   var time = 500;
